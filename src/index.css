@@ -65,11 +65,12 @@
   grid-area: d;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr;
 }
 #d h1 {
   align-self: end;
   justify-self: center;
+  font-size: 6rem;
 }
 #d span {
   align-self: start;
@@ -80,7 +81,7 @@
   justify-self: center;
   font-size: xx-large;
   display: flex;
-  width: 4em;
+  width: 5em;
   justify-content: space-between;
   align-items: center;
 }
