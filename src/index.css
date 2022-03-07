@@ -13,6 +13,11 @@
   padding: 0px;
   margin: 0px;
   color: var(--umber);
+  /* background-color: var(--almond); */
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -39,6 +44,7 @@
   font-size: large;
   font-weight: 700;
   color: var(--umber);
+  background-color: var(--light-almond);
   transition: transform 0.3s cubic-bezier(0.55, 0, 0.55, 0.2),
     box-shadow 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
   transform-origin: 50% 50%;
