@@ -1,0 +1,89 @@
+:root {
+  --almond: #e5d5c7;
+  --light-almond: #ece0d5;
+  --umber: #725e54;
+  --blue-munsell: #1b9aaa;
+  --oxford-blue: #001427;
+  --rich-black: #0d1321;
+
+  font-family: Helvetica, sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  color: var(--umber);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "a a a b"
+    "c d d b"
+    "c d d b"
+    "c e e e";
+  background-color: var(--almond);
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-almond);
+  text-rendering: geometricPrecision;
+  font-size: large;
+  font-weight: 700;
+  color: var(--umber);
+  transition: transform 0.3s cubic-bezier(0.55, 0, 0.55, 0.2),
+    box-shadow 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+  transform-origin: 50% 50%;
+  text-shadow: 0em -0.05em 0em rgba(255, 255, 255, 0.5);
+  box-shadow: 0em -0.05em 0em rgba(255, 255, 255, 0.5);
+  /* text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5); */
+}
+
+.item:hover {
+  transform: scale(1);
+  box-shadow: 0em -0.2em 0em rgba(255, 255, 255, 0.5);
+}
+
+#a {
+  grid-area: a;
+}
+#b {
+  grid-area: b;
+}
+#c {
+  grid-area: c;
+}
+#d {
+  grid-area: d;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#d h1 {
+  align-self: end;
+  justify-self: center;
+}
+#d span {
+  align-self: start;
+  justify-self: center;
+}
+#socials {
+  align-self: start;
+  justify-self: center;
+  font-size: xx-large;
+  display: flex;
+  width: 4em;
+  justify-content: space-between;
+  align-items: center;
+}
+#e {
+  grid-area: e;
+}
