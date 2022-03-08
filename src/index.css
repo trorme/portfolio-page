@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
 :root {
   --almond: #e5d5c7;
   --light-almond: #ece0d5;
@@ -6,7 +8,7 @@
   --oxford-blue: #001427;
   --rich-black: #0d1321;
 
-  font-family: Helvetica, sans-serif;
+  font-family: Oswald, Helvetica, sans-serif;
 }
 
 * {
@@ -50,7 +52,6 @@ a {
   transform-origin: 50% 50%;
   text-shadow: 0em -0.05em 0em rgba(255, 255, 255, 0.5);
   box-shadow: 0em -0.05em 0em rgba(255, 255, 255, 0.5);
-  /* text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5); */
 }
 
 .item:hover {
@@ -63,6 +64,8 @@ a {
 }
 #b {
   grid-area: b;
+  writing-mode: vertical-lr;
+  font-size: 5rem;
 }
 #c {
   grid-area: c;
@@ -90,6 +93,13 @@ a {
   width: 5em;
   justify-content: space-between;
   align-items: center;
+  transition: text-shadow 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+}
+#socials > a > i {
+  transition: filter 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+}
+#socials > a > i:hover {
+  filter: drop-shadow(0px 0.1em 0.05em rgb(13, 19, 33, 0.3));
 }
 #e {
   grid-area: e;
